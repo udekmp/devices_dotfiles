@@ -30,7 +30,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-
+exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 ### Idle configuration
 #
 # Example configuration:
@@ -220,3 +220,5 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+output "*" bg /home/coreboot/wallpaper/doors3_alt.png fill
